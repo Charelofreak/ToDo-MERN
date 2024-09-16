@@ -1,0 +1,36 @@
+.todo-element.first-details {
+       
+    .parent-menu{
+          ul{
+            bottom: -60px;
+          }
+    }
+}
+.after-filter-btn{
+  position: relative;
+}
+.after-filter-btn::after{
+  position: absolute;
+  content: '';
+  width: 2vw;
+ 
+  bottom: -1vh;
+  right: -1.5vw;
+  height: 2vw;
+  border-radius: 50%;
+ 
+}
+
+
+.notifi{
+  top: 5px;
+
+  position: absolute;
+  transform: rotate(45deg);
+  right: 19.5%;
+  z-index: 5; /* Lower z-index than the parent */
+  background: red;
+  width: 30%;
+  height: 10%;
+}
+

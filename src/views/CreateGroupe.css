@@ -1,0 +1,56 @@
+.form-Groupe-Create{
+    background: rgba(255, 255, 255, 0.6);
+    z-index: 1;
+}
+*{
+    color: black ;
+}
+.form-Groupe-Create::after{
+    position: absolute;
+    content: '';
+    z-index: -1;
+    width: 25%;
+    height: 25%;
+    border-left: 12px green solid;
+    border-top: 12px green solid;
+    left: -20px;
+    top: -20px;
+    animation: border 4s ease-in-out infinite;
+}
+.form-Groupe-Create::before{
+    position: absolute;
+    content: '';
+    z-index: -1;
+    width: 25%;
+    height: 25%;
+    border-right: 12px green solid;
+    border-bottom: 12px green solid;
+    right: -20px;
+    bottom: -20px;
+    animation: border 4s ease-in-out infinite;
+}
+
+@keyframes border {
+    0%{
+        width: 25%;
+        height: 25%;  
+    }
+    20%{
+    width: 50%;
+    height: 50%;
+    }
+    80%{
+    width: 50%;
+    height: 50%;
+    }
+    100%{
+        width: 25%;
+        height: 25%;  
+    }
+}
+.logo-Groupe{
+    
+     
+    height:100vh;
+    background: url('../imgs/team.jpg') center / cover;
+}

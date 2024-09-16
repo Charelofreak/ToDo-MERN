@@ -1,0 +1,38 @@
+.modal{
+    padding: 0px ; 
+    background: white ;
+     svg{
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        display: flex;
+         rect{
+            width: 100%;
+            height: 100%;
+            stroke: green;
+            animation: strok-animation 1s  linear forwards infinite;
+            fill: none;
+              stroke-dasharray: 1150;
+           
+            stroke-width: 5px;
+         }
+     }
+}
+@keyframes strok-animation  {
+  0%{
+    stroke-dashoffset: 0;
+    filter: hue-rotate(0deg);
+  }
+  50%{
+    stroke-dashoffset: 1150;
+  }
+  100%{
+    stroke-dashoffset: 2300;
+    filter: hue-rotate(720deg);
+  }
+  
+
+  
+    
+}

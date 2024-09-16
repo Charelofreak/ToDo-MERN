@@ -1,0 +1,17 @@
+svg > circle:last-child{
+    stroke-dasharray: 2000;
+    stroke-dashoffset:0;
+    animation: circle 2s infinite linear ;
+}
+@keyframes circle {
+      0%{
+        stroke-dashoffset:0;
+      }
+      50%{
+        stroke-dashoffset:2000;
+      }
+      100%{
+        stroke-dashoffset:4000;
+      }
+}
+     

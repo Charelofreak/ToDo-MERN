@@ -1,0 +1,86 @@
+.parent-menu{
+    position: relative;
+    ul{
+         display: none;
+         width: 100px;
+         height: 100px;
+         border-radius: 5px;
+         box-shadow: 0 0 4px black , 0 0 20px gray;
+         position: absolute;
+         right: -0px;
+         bottom: 0px;
+         z-index: 2;
+         background: white;
+         flex-direction: column;
+         justify-content: space-evenly;
+         align-items: center;
+         li{
+            width: 100%;
+            height: calc(100% / 3 - 3px);
+            text-align: center;
+         }
+         li:hover{
+            background: #0000000e;
+            
+         }
+    }
+    img{
+        padding: 5px;
+    }
+    .menu:hover{
+        display: flex !important;
+        
+    }
+    .img:active   ~  .menu,
+    .img:focus   ~  .menu {
+        display: flex !important;
+    }
+    
+}
+.an{
+    display: flex !important;
+    opacity: 0;
+    transform: translate(50px);
+    animation: an .5s linear forwards ;
+}
+@keyframes an {
+     0%{
+        opacity: 0;
+        transform: scale(1.5);
+     }
+     100%{
+        opacity: 1;
+        transform: scale(1);
+    
+     }
+}
+.doneTask::after{
+  content: "done";
+  position: absolute;
+  left: 0;
+  background: #00000034;
+  color: white;
+  font-size: xx-large;
+  text-align: center;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+  display: block;
+  height: 100%;
+  width: 0;
+  animation: dontask 1s ease-in-out forwards;
+}
+
+@keyframes dontask {
+    0%{
+        width: 0%;
+        text-align: center;
+    }
+    80%{
+        width: 100%;
+        letter-spacing: 60px;
+    }
+    100%{
+       display: none;
+    }
+    
+}

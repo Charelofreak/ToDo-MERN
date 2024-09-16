@@ -1,0 +1,39 @@
+.groupe-todo{
+
+height: max-content;
+
+      div:first-child{
+        position: relative;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           padding: 8px;
+           span:nth-child(2){
+                   cursor: pointer;
+                  padding: 10px;
+                  border-radius: 50%;
+                   display: grid;
+                   place-content: center;
+           }
+           span:nth-child(2):hover{
+            background: #00000014;
+            
+    }
+      }
+     
+    .groupes::-webkit-scrollbar{
+        width: 10px;
+        margin-left:5px ;
+
+    }
+    .groupes::-webkit-scrollbar-thumb{
+     background: #000;
+  }
+
+  
+
+    .groupes::-webkit-scrollbar-track{
+      background: transparent;
+      margin-left: 10px;
+    }
+}
